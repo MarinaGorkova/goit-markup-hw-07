@@ -13,9 +13,6 @@
     position: relative;
     overflow: hidden;
 }
-.portfolio-list-item:hover .web-img-text {
-    transform: translateY(0);
-}
 .web-img-text {
     position: absolute;
     top: 0;
@@ -28,7 +25,9 @@
     height: 100%;
     transform: translateY(100%);
     transition: transform 300ms linear;
-    
+    .portfolio-list-item:hover & {
+        transform: translateY(0);
+    }    
 }
 .portfolio-list-item {
     flex-basis: calc(100% / 3 - 30px);

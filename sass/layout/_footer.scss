@@ -60,8 +60,10 @@
     display: flex;
     justify-content: center;
 }
-.footer-social-itemm + .footer-social-item {
+.footer-social-item {
+    & + & {
     margin-left: 10px;
+    }
 }
 .footer-social-link {
     width: 44px;

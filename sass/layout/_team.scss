@@ -57,8 +57,10 @@
     display: flex;
     justify-content: center;
 }
-.about-team-social-item + .about-team-social-item {
+.about-team-social-item {
+    & + & {
     margin-left: 10px;
+    }
 }
 .about-team-social-link {
     width: 44px;
