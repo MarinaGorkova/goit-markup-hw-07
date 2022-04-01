@@ -6,3 +6,11 @@
     --first-title-color: #ffffff;
     --second-title-color: #212121;
     }
+html {
+        box-sizing: border-box;
+    }
+*,
+*::before,
+*::after {
+        box-sizing: inherit;
+}

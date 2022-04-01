@@ -2,9 +2,7 @@
     background-color: white;
     padding-top: 94px;
     padding-bottom: 94px;
-    /* margin-left: 215px;
-    margin-right: 215px; */
-    
+       
 }
 .about-item:nth-child(1) {
     margin-left: 0;
@@ -13,18 +11,7 @@
 .about-list {
     display: flex;
     }
-/* .about-list + .about-list {
-    margin-left: 30px;
-} */
-/* .about-item::before {
-    content: "";
-    display: block;
-    height: 120px;
-    background-color: #F5F4FA;
-    background-position: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
-} */
+
 .about-item-title {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -41,9 +28,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--text-color);
-    /* margin-bottom: 94px; */
-    
+    color: var(--text-color); 
     
 }
 .about-item-photo-img {

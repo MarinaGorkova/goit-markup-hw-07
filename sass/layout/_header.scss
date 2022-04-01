@@ -57,6 +57,9 @@
     color: var(--header-color);
     display: block;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    &:hover,&:focus {
+        color: #2196F3;
+    }
 }
 .current {
     color: #2196F3;
@@ -74,11 +77,6 @@
 
 }
 
-.header-link:hover, 
-.header-link:focus {
-    color: #2196F3;
-}
-
 .header-tel {
     font-weight: 500;
     font-size: 14px;
@@ -88,6 +86,13 @@
     display: flex;  
     align-items: center;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    &:hover,&:focus {
+        color: #2196F3;
+    }
+    &:hover .header-mail,
+    &:focus .header-mail {
+        fill: #2196F3;
+    }
 }
 .header-tel:last-child {
     margin-left: 50px;
@@ -95,8 +100,7 @@
 
 .header-contacts {
     margin-left: auto;
-    display: flex;
-    
+    display: flex;    
 }
 
 .header-mail {
@@ -105,19 +109,3 @@
     fill: var(--text-color);
     transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.header-tel:hover,
-.header-tel:focus {
-    color: #2196F3;
-}
-.header-tel:hover .header-mail,
-.header-tel:focus .header-mail {
-    fill: #2196F3;
-}
-/* .header-mail:hover,
-.header-mail:focus {
-    fill:var(--accent-color);
-}
-.header-mail-img:hover,
-.header-mail-img:focus {
-    fill:var(--accent-color);
-} */
